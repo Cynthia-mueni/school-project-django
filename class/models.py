@@ -11,3 +11,7 @@ class Class(models.Model):
     max_students = models.PositiveIntegerField()
     current_students = models.PositiveIntegerField(default=0)
     is_active = models.BooleanField(default=True)
+    
+    
+    def __str__(self):
+        return f"{self.class_name} {self.class_code}"

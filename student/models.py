@@ -12,3 +12,6 @@ class Student(models.Model):
     enrollment_date = models.DateField()
     is_active = models.BooleanField(default=True)
 
+
+def __str__(self):
+        return f"{self.first_name} {self.last_name}"
